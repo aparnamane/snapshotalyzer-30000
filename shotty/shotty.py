@@ -10,7 +10,7 @@ ec2 = session.resource('ec2')
 def list_instnaces():
     "List EC2 instnaces"
     for i in ec2.instances.all():
-        print(','.json((
+        print(','.join((
             i.id,
             i.instance_type,
             i.placement['AvailabilityZone'],
