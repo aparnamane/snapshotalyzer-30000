@@ -8,4 +8,7 @@ To manage AWS EC2 instance snapshot
 
 ## Rumnning
 
-`pipenv run python shotty/shotty.py`
+`pipenv run python shotty/shotty.py <command> <--project=PROJECT>`
+
+*command* is list, start, or stop
+*project* is optional
